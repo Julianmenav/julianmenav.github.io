@@ -1,0 +1,99 @@
+---
+export interface Props {
+  name: string;
+  picture: string;
+  description: string;
+  links: string[];
+  technologies: string[];
+}
+const { name, picture, description, links, technologies } = Astro.props;
+---
+
+<div
+  id="projectCard"
+  style={{
+    backgroundImage: `url(${picture})`,
+  }}
+  class="relative bg-cover bg-center w-[400px] shadow-xl overflow-hidden"
+>
+  <div id="mask" class=""></div>
+  <div id="details" class="z-50">
+    <div class="h-full flex flex-col pt-3 px-3 2xs:px-5 2xs:pt-5">
+      <p class="font-bold text-xl xs:text-2xl font-roboto">{name}</p>
+      <div class="flex grow relative">
+        <div class="w-[70%] pr-6 pt-3">
+          <p class="font-worksans text-xs 2xs:text-sm xs:text-base">
+            {description}
+          </p>
+        </div>
+        <div
+          id="linkButtons"
+          class="absolute h-full transition-all duration-1000 -right-1/2 flex flex-col gap-6 justify-center items-center"
+        >
+          <a href={links[0]} target="_blank" class="">
+            <button
+              class="text-black w-24 py-1 bg-white rounded-full text-center border-2 hover:bg-transparent hover:text-white border-white"
+            >
+              <p class="text-xs xs:text-sm font-worksans">View code</p>
+            </button>
+          </a>
+          {
+            links[1] && (
+              <a href={links[1]} target="_blank">
+                <button class="text-black  w-24 py-1 bg-white rounded-full text-center border-2  hover:bg-transparent hover:text-white border-white">
+                  <p class="text-xs xs:text-sm font-worksans">Try</p>
+                </button>
+              </a>
+            )
+          }
+        </div>
+      </div>
+      <div class="flex flex-wrap justify-start gap-2 pb-1 xs:pb-2">
+        {
+          technologies.map((tag, id) => (
+            <div
+              class={`px-1.5 py-0.5 text-xs border-[2px] border-${tag} text-${tag} font-bold rounded-md`}
+            >
+              {tag}
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  #projectCard {
+    aspect-ratio: 16/11;
+  }
+  #mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0);
+    opacity: 0;
+    transition: all 0.2s ease-out;
+  }
+
+  #details {
+    position: absolute;
+    transition: all 0.4s ease-out;
+    width: 100%;
+    height: 100%;
+    opacity: 0%;
+  }
+
+  #projectCard:hover #mask {
+    backdrop-filter: blur(2px);
+    opacity: 75%;
+  }
+
+  #projectCard:hover #details {
+    opacity: 100%;
+  }
+
+  #projectCard:hover #linkButtons {
+    right: 0;
+  }
+</style>

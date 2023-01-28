@@ -1,0 +1,52 @@
+[
+  {
+    "picture": "/img/twitter.png",
+    "name": "Twitter Bot Downloader",
+    "description": "Web App that makes easy to download videos from the social network Twitter. It uses the twitter official API.",
+    "links": [
+      "https://github.com/Julianmenav/twitter-video-downloader",
+      "https://julianmenav.github.io/twitter-video-downloader/"
+    ],
+    "technologies": ["React", "Tailwind", "Express", "Node"]
+  },
+  {
+    "picture": "/img/chat.png",
+    "name": "Web Sockets Chat",
+    "description": "Just write an user name and a room number to talk with all the others within the same room.",
+    "links": [
+      "https://github.com/Julianmenav/websockets-chat",
+      "https://julianmenav.github.io/websockets-chat/"
+    ],
+    "technologies": ["React", "CSS", "Express", "Node"]
+  },
+  {
+    "picture": "/img/cardGame.png",
+    "name": "Memory Card Game",
+    "description": "In this game you must memorize the position of the cards to match them.",
+    "links": [
+      "https://github.com/Julianmenav/memory-game",
+      "https://julianmenav.github.io/memory-game/"
+    ],
+    "technologies": ["React", "CSS"]
+  },
+  {
+    "picture": "/img/pomodoro.png",
+    "name": "Pomodoro technique Timer",
+    "description": "You can use this timer to study following the pomodoro technique setting the time in intervals of work and rest.",
+    "links": [
+      "https://github.com/Julianmenav/pomodoro-clock",
+      "https://julianmenav.github.io/pomodoro-clock/"
+    ],
+    "technologies": ["React", "Tailwind"]
+  },
+  {
+    "picture": "/img/calculator.png",
+    "name": "Scientific calculator",
+    "description": "One of the projects done during class.",
+    "links": [
+      "https://github.com/Julianmenav/Projects-DAW2/tree/production/calculadora",
+      "https://julianmenav.github.io/Projects-DAW2/calculadora/index.html"
+    ],
+    "technologies": ["HTML", "CSS", "Javascript"]
+  }
+]

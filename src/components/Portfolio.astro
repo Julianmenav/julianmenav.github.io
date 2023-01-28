@@ -1,0 +1,35 @@
+---
+import projectList from "../../content/projectList.json";
+import ProjectCard from "./ProjectCard.astro";
+---
+
+<section
+  id="portfolio"
+  class="container px-6 py-8 max-w-[430px] sm:max-w-[560px] lg:max-w-[900px] xl:max-w-[1300px] m-auto"
+>
+  <p class="text-[50px] font-roboto italic">PROJECTS</p>
+  <p class="text-2xl xl:w-2/3 font-worksans">
+    Some of my projects done during my learning, you can find the rest on my <a
+      href="https://github.com/Julianmenav?tab=repositories"
+      target="_blank">github.</a
+    >
+  </p>
+  <div
+    id="portfolio"
+    class="flex flex-wrap gap-y-8 gap-x-6 mt-9 justify-center"
+  >
+    {
+      projectList.map((project, id) => {
+        return (
+          <ProjectCard
+            picture={project.picture}
+            name={project.name}
+            description={project.description}
+            links={project.links}
+            technologies={project.technologies}
+          />
+        );
+      })
+    }
+  </div>
+</section>
