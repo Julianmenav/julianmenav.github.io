@@ -17,7 +17,7 @@ const { name, picture, description, links, technologies } = Astro.props;
   class="relative bg-cover bg-center w-[400px] shadow-xl overflow-hidden"
   onclick=""
 >
-  <div id="mask" class=""></div>
+  <div id="mask" class="bg-black"></div>
   <div id="details" class="z-50">
     <div class="relative h-full flex flex-col pt-3 px-3 2xs:px-5 2xs:pt-5">
       <p class="font-bold text-xl xs:text-2xl font-roboto">{name}</p>
@@ -72,7 +72,6 @@ const { name, picture, description, links, technologies } = Astro.props;
     width: 100%;
     height: 100%;
     top: 0;
-    background-color: rgba(0, 0, 0);
     opacity: 0;
     transition: all 0.2s ease-out;
   }

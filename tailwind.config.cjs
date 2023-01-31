@@ -1,5 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 const colors = {
+  lime: '#bae67e',
+  purple: '#bea0f9',
+  darkBg: '#1d2433',
   black: 'black',
   white: 'white',
   Astro: '#ff5d01',
