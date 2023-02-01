@@ -15,7 +15,7 @@ const colors = {
   Express: "#89bb3c",
   Node: "#3b7f3a",
   PHP: "#4d588e",
-  CSS: "#006ab1",
+  CSS: "#7151a5",
   HTML: "#d84924",
 }
 
