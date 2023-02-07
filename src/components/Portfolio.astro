@@ -1,6 +1,6 @@
 ---
 import projectList from "../../content/projectList.json";
-import ProjectCard from "./ProjectCard.astro";
+import ProjectCard from "./ProjectCard";
 ---
 
 <section
@@ -22,6 +22,7 @@ import ProjectCard from "./ProjectCard.astro";
       projectList.map((project, id) => {
         return (
           <ProjectCard
+            client:visible
             picture={project.picture}
             name={project.name}
             description={project.description}
@@ -34,7 +35,7 @@ import ProjectCard from "./ProjectCard.astro";
   </div>
 </section>
 <style>
-  #portfolio{
+  #portfolio {
     min-height: 100vh;
   }
 </style>
