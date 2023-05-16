@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './ProjectCard.css';
 
 export default function ProjectCard({ name, picture, description, links, technologies}) {
@@ -7,7 +7,6 @@ export default function ProjectCard({ name, picture, description, links, technol
   //Appear on render
   useEffect(() => {
     setHidden(false);
-  
   }, [])
 
   return (
@@ -16,7 +15,7 @@ export default function ProjectCard({ name, picture, description, links, technol
       style={{
         backgroundImage: `url(${picture})`,
       }}
-      className={`relative bg-cover bg-center w-[400px] shadow-xl overflow-hidden hiddenCard ${hidden ? "" : "show"}`}
+      className={`relative bg-cover bg-center w-[400px] shadow-xl overflow-hidden rounded-md hiddenCard ${hidden ? "" : "show"}`}
       onClick={()=>{}}
     >
       <div id="mask" className="bg-black"></div>
