@@ -1,4 +1,39 @@
-<section id="home">home</section>
+---
+import Slider from "./Slider/Slider";
+---
+
+<section id="home" class="flex flex-col">
+  <header class="hidden sm:flex w-full mx-auto md:flex-row max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl justify-between items-center mt-1 h-20 border-b border-custom-gray/[60%] text-custom-gray font-semibold">
+    <div class="flex items-center gap-2">
+      <a href="mailto:julianmenav2@gmail.com">
+        <div class="rounded-full p-3 border border-custom-gray/[40%] bg-[#161616] text-custom-gray">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"></path>
+          </svg>
+        </div>
+      </a>
+      <a href="mailto:julianmenav2@gmail.com"> julianmenav2@gmail.com</a>
+    </div>
+    <div>
+      <a href="https://www.linkedin.com/in/julian-mena-vi%C3%B1as/">LinkedIn</a>
+      <span class="mx-1">/</span>
+      <a href="https://github.com/Julianmenav">GitHub</a>
+    </div>
+  </header>
+  <section class="flex flex-col md:flex-1 justify-center items-center gap-10 mt-16 pb-8">
+    <div class="flex flex-col items-center gap-5">
+      <div class="rounded-full relative w-48 h-48 overflow-hidden bg-custom-gray">
+        <img class="pt-6" src="/img/bw-propic.webp" alt="thats me" />
+      </div>
+      <p class="font-semibold">Hi , I'm Julian 👋</p>
+    </div>
+    <p class="text-3xl mx-2 md:max-w-xl lg:max-w-2xl md:text-4xl lg:text-6xl text-center font-extrabold lg:leading-snug bg-clip-text text-transparent bg-gradient-to-r from-white to-[#242424]">Building and designing fullstack web applications.</p>
+  </section>
+  <!-- React Laravel Node Javascript Python Tailwind -->
+  <section class="mt-4 mb-4 text-custom-gray bg-[#1a1a1a] h-28 lg:h-40 w-full">
+    <Slider items={["React", "Laravel", "Tailwind", "Python", "Javascript"]} />
+  </section>
+</section>
 <style>
   #home {
     min-height: 100vh;
