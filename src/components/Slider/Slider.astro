@@ -1,0 +1,19 @@
+---
+const { items } = Astro.props;
+---
+
+<div class="overflow-hidden flex items-center py-6 text-custom-gray bg-[#272727]">
+  {
+    [0, 1].map(() => (
+      <div class="animate-infinite-slide font-extrabold text-3xl flex min-w-full justify-between shrink-0">
+        {items.map((item) => (
+          <div class="h-16 md:h-18 mx-12 md:mx-32">
+            <a href={item.url}>
+              <img alt={item.name} src={item.route} class="h-full" />
+            </a>
+          </div>
+        ))}
+      </div>
+    ))
+  }
+</div>

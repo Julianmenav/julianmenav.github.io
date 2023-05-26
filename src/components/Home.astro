@@ -1,9 +1,10 @@
 ---
-import Slider from "./Slider/Slider";
+import Slider from "./Slider/Slider.astro";
+import logos from "../../content/logos.json";
 ---
 
 <section id="home" class="flex flex-col">
-  <header class="flex w-full sm:mx-auto gap-10 px-4 py-5 md:flex-row max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl justify-between items-center border-b border-custom-gray/[60%] text-custom-gray font-semibold">
+  <header class="flex w-full sm:mx-auto gap-10 px-4 sm:px-0 py-5 md:flex-row max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl justify-between items-center border-b border-custom-gray/[60%] text-custom-gray font-semibold">
     <div class="flex items-center gap-2">
       <a href="mailto:julianmenav2@gmail.com">
         <div class="rounded-full p-3 border border-custom-gray/[40%] bg-[#161616] text-custom-gray">
@@ -22,7 +23,7 @@ import Slider from "./Slider/Slider";
       <a href="https://twitter.com/julianmenav">Twitter</a>
     </div>
   </header>
-  <section class="flex flex-col py-3 md:flex-1 justify-center items-center gap-10">
+  <section class="flex flex-col mt-10 mb-3 md:flex-1 justify-center items-center gap-10">
     <div class="flex flex-col items-center gap-5">
       <div class="rounded-full relative w-48 h-48 overflow-hidden bg-custom-gray">
         <img class="pt-6" src="/img/bw-propic.webp" alt="thats me" />
@@ -33,7 +34,7 @@ import Slider from "./Slider/Slider";
   </section>
   <!-- React Laravel Node Javascript Python Tailwind -->
   <section class="flex-1 md:flex-auto mt-5">
-    <Slider items={["React", "Laravel", "Tailwind", "Python", "Javascript"]} />
+    <Slider items={logos} />
   </section>
 </section>
 <style>
