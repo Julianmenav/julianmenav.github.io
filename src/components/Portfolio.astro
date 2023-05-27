@@ -3,8 +3,10 @@ import projectList from "../../content/projectList.json";
 import ProjectCard from "./ProjectCard/ProjectCard";
 ---
 
-<section id="portfolio" class="container px-6 py-8 max-w-[430px] sm:max-w-[560px] lg:max-w-[900px] xl:max-w-[1300px] m-auto">
-  <p class="w-fit text-2xl xl:w-2/3 font-worksans bg-clip-text text-transparent bg-gradient-to-r from-white to-custom-gray">Take a look to some of my projects.</p>
+<section id="portfolio" class="min-h-screen container px-6 py-8 max-w-[430px] sm:max-w-[560px] lg:max-w-[900px] xl:max-w-[1300px] m-auto">
+  <div class="bg-zinc-200 dark:bg-transparent p-2 inline-block rounded-lg">
+    <p class="w-fit text-2xl font-worksans bg-clip-text text-transparent bg-gradient-to-r from-purple-800 to-blue-300/80 dark:from-white dark:to-[#242424] font-bold">Take a look to some of my projects.</p>
+  </div>
   <div id="projectList" class="flex flex-wrap gap-y-8 gap-x-6 mt-9 justify-center">
     {
       projectList.map((project, id) => {
@@ -13,8 +15,3 @@ import ProjectCard from "./ProjectCard/ProjectCard";
     }
   </div>
 </section>
-<style>
-  #portfolio {
-    min-height: 100vh;
-  }
-</style>

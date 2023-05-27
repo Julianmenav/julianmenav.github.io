@@ -15,7 +15,7 @@ export default function ProjectCard({ name, picture, description, links, technol
       style={{
         backgroundImage: `url(${picture})`,
       }}
-      className={`relative bg-cover bg-center w-[400px] shadow-xl overflow-hidden rounded-md hiddenCard ${hidden ? "" : "show"}`}
+      className={`text-white relative bg-cover bg-center w-[400px] shadow-xl overflow-hidden rounded-md hiddenCard ${hidden ? "" : "show"}`}
       onClick={()=>{}}
     >
       <div id="mask" className="bg-black"></div>

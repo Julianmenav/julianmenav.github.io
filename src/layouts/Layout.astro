@@ -17,18 +17,22 @@ const { title } = Astro.props;
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,700&family=Work+Sans&display=block" rel="stylesheet" />
     <title>{title}</title>
+    <script is:inline>
+      if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+        document.documentElement.classList.add("dark");
+        localStorage.setItem("theme", "dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+        localStorage.setItem("theme", "light");
+      }
+    </script>
   </head>
-  <body class="bg-dark bg-dot-grid">
+  <body class="bg-zinc-200 dark:bg-dark bg-dot-grid">
     <slot />
   </body>
 </html>
-<style>
-  body {
-    color: rgba(255, 255, 255, 0.87);
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
+<style is:global>
+  .bg-clip-text {
+    -webkit-background-clip: text;
   }
 </style>
