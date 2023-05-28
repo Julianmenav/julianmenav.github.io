@@ -34,10 +34,13 @@ module.exports = {
       colors: {
         "dark":"#101010",
         "custom-gray": "#777777",
+        "bright-color":"#b09dc2",
         ...programmingColors
       },
       backgroundImage: {
-        "dot-grid": "url('/dotGrid.svg')"
+        "dot-grid": "url('/dotGrid.svg')",
+        "black-white-profile": "url('/img/bw-propic.webp')",
+        "color-profile": "url('/img/color-propic.webp')"
       },
       keyframes: {
         slide: {
