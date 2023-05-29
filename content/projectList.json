@@ -30,14 +30,14 @@
     "technologies": ["React", "CSS"]
   },
   {
-    "picture": "/img/pomodoro.webp",
-    "name": "Pomodoro technique Timer",
-    "description": "You can use this timer to study following the pomodoro technique setting the time in intervals of work and rest.",
+    "picture": "/img/lolfinder.webp",
+    "name": "Player Finder",
+    "description": "App that uses League of Legends game API to retrieve data of players.",
     "links": [
-      "https://github.com/Julianmenav/pomodoro-clock",
-      "https://julianmenav.github.io/pomodoro-clock/"
+      "https://github.com/Julianmenav/player-finder",
+      "https://julianmenav.github.io/player-finder/"
     ],
-    "technologies": ["React", "Tailwind"]
+    "technologies": ["React", "CSS", "Javascript", "Tailwind", "Express", "Node"]
   },
   {
     "picture": "/img/calculator.webp",
@@ -48,5 +48,15 @@
       "https://julianmenav.github.io/Projects-DAW2/calculadora/index.html"
     ],
     "technologies": ["HTML", "CSS", "Javascript"]
+  },
+  {
+    "picture": "/img/pomodoro.webp",
+    "name": "Pomodoro technique Timer",
+    "description": "You can use this timer to study following the pomodoro technique setting the time in intervals of work and rest.",
+    "links": [
+      "https://github.com/Julianmenav/pomodoro-clock",
+      "https://julianmenav.github.io/pomodoro-clock/"
+    ],
+    "technologies": ["React", "Tailwind"]
   }
 ]
