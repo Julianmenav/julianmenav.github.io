@@ -11,7 +11,7 @@ const programmingColors = {
   CSS: "#7151a5",
   HTML: "#d84924",
   Laravel: "#f25951",
-  Python: "##f2c73e",
+  Python: "#f2c73e",
 };
 
 module.exports = {
@@ -30,6 +30,7 @@ module.exports = {
       fontFamily: {
         worksans: ["Work Sans", "sans-serif"],
         roboto: ["'Roboto Condensed'", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"]
       },
       colors: {
         dark: "#101010",
