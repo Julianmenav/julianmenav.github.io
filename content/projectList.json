@@ -1,5 +1,14 @@
 [
   {
+    "picture": "/img/dreative.webp",
+    "name": "Dreative",
+    "description": "This app was my final degree project, which uses OpenAI api to let people create AI Images. It was deployed in AWS.",
+    "links": [
+      "https://github.com/Julianmenav/proyecto-final"
+    ],
+    "technologies": ["Laravel", "React", "PHP", "Tailwind"]
+  },
+  {
     "picture": "/img/twitter.webp",
     "name": "Twitter Bot Downloader",
     "description": "Web App that makes easy to download videos from the social network Twitter. It uses the twitter official API.",
