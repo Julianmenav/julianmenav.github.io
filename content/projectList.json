@@ -6,7 +6,7 @@
     "links": [
       "https://github.com/Julianmenav/proyecto-final"
     ],
-    "technologies": ["Laravel", "React", "PHP", "Tailwind"]
+    "technologies": ["Laravel", "React", "PHP", "Tailwind", "MySQL"]
   },
   {
     "picture": "/img/twitter.webp",
@@ -16,7 +16,7 @@
       "https://github.com/Julianmenav/twitter-video-downloader",
       "https://julianmenav.github.io/twitter-video-downloader/"
     ],
-    "technologies": ["React", "Tailwind", "Express", "Node"]
+    "technologies": ["React", "Tailwind", "Express", "Node", "Javascript"]
   },
   {
     "picture": "/img/chat.webp",
@@ -26,7 +26,7 @@
       "https://github.com/Julianmenav/websockets-chat",
       "https://julianmenav.github.io/websockets-chat/"
     ],
-    "technologies": ["React", "CSS", "Express", "Node"]
+    "technologies": ["React", "CSS", "Express", "Node", "Firebase"]
   },
   {
     "picture": "/img/cardGame.webp",
@@ -36,7 +36,7 @@
       "https://github.com/Julianmenav/memory-game",
       "https://julianmenav.github.io/memory-game/"
     ],
-    "technologies": ["React", "CSS"]
+    "technologies": ["React", "Javascript", "CSS"]
   },
   {
     "picture": "/img/lolfinder.webp",
@@ -66,6 +66,6 @@
       "https://github.com/Julianmenav/pomodoro-clock",
       "https://julianmenav.github.io/pomodoro-clock/"
     ],
-    "technologies": ["React", "Tailwind"]
+    "technologies": ["React", "Javascript", "Tailwind"]
   }
 ]

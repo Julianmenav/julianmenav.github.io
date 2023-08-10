@@ -12,6 +12,8 @@ const programmingColors = {
   HTML: "#d84924",
   Laravel: "#f25951",
   Python: "#f2c73e",
+  Firebase: '#ffcc2f',
+  MySQL: '#005e87'
 };
 
 module.exports = {
