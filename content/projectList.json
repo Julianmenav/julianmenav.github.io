@@ -26,7 +26,7 @@
       "https://github.com/Julianmenav/websockets-chat",
       "https://julianmenav.github.io/websockets-chat/"
     ],
-    "technologies": ["React", "CSS", "Express", "Node", "Firebase"]
+    "technologies": ["React", "CSS", "Express", "Node", "Firebase", "Oauth2"]
   },
   {
     "picture": "/img/cardGame.webp",
@@ -67,5 +67,14 @@
       "https://julianmenav.github.io/pomodoro-clock/"
     ],
     "technologies": ["React", "Javascript", "Tailwind"]
+  },
+  {
+    "picture": "/img/level20.webp",
+    "name": "LvL 20",
+    "description": "A CRUD app to get familiar with the spring framework.",
+    "links": [
+      "https://github.com/Julianmenav/spring-api"
+    ],
+    "technologies": ["Spring","Java","Oauth2"]
   }
 ]
