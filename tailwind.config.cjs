@@ -13,7 +13,10 @@ const programmingColors = {
   Laravel: "#f25951",
   Python: "#f2c73e",
   Firebase: '#ffcc2f',
-  MySQL: '#005e87'
+  MySQL: '#005e87',
+  Oauth2: '#FFF',
+  Spring: '#5fb92e',
+  Java: '#ee222b'
 };
 
 module.exports = {
