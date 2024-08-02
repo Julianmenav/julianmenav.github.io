@@ -49,6 +49,16 @@
     "technologies": ["React", "CSS", "Javascript", "Tailwind", "Express", "Node"]
   },
   {
+    "picture": "/img/dnd-calculator.webp",
+    "name": "DnD Calculator",
+    "description": "Frontend app to calculate and compare average damage outputs in the known game Dungeon & Dragons.",
+    "links": [
+      "https://github.com/Julianmenav/dnd-calculator",
+      "https://julianmenav.github.io/dnd-calculator/"
+    ],
+    "technologies": ["React","Javascript","Tailwind"]
+  },
+  {
     "picture": "/img/calculator.webp",
     "name": "Scientific calculator",
     "description": "One of the projects done during class.",
