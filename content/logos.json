@@ -20,6 +20,11 @@
     "url": "https://www.php.net/"
   },
   {
+    "name": "Rust",
+    "route": "/icons/Ferris.svg",
+    "url": "https://www.rust-lang.org/"
+  },
+  {
     "name": "Laravel",
     "route": "/icons/Laravel.svg",
     "url": "https://laravel.com/"

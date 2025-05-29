@@ -1,0 +1,11 @@
+[
+  {
+    "picture": "/img/dreative.webp",
+    "name": "Dreative",
+    "description": "This app was my final degree project, which uses OpenAI api to let people create AI Images. It was deployed in AWS.",
+    "links": [
+      "https://julianmenav.github.io/react-threejs/"
+    ],
+    "technologies": ["React", "Three.js"]
+  }
+]
