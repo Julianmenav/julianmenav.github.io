@@ -1,11 +1,11 @@
 [
   {
     "picture": "",
-    "name": "Edison",
+    "name": "3Di",
     "description": "Edison",
     "links": [
-      "https://github.com/julianmenav/react-threejs",
-      "https://julianmenav.github.io/react-threejs/"
+      "https://github.com/julianmenav/3di",
+      "https://julianmenav.github.io/3di/"
     ],
     "technologies": ["React", "Three.js"]
   }
