@@ -4,15 +4,17 @@ export const useScroll = () => {
   const [hidden, setHidden] = useState(true);
 
   useEffect(() => {
+    const main = document.querySelector("#main-scroll");
+    if (!main) return;
     const scrollFunction = () => {
-      window.scrollY === 0 ? setHidden(false) : setHidden(true);
+      setHidden(main.scrollTop > 100);
     };
 
     scrollFunction();
-    window.addEventListener("scroll", scrollFunction);
+    main.addEventListener("scroll", scrollFunction);
 
     return () => {
-      window.removeEventListener("scroll", scrollFunction);
+      main.removeEventListener("scroll", scrollFunction);
     };
   }, []);
 
