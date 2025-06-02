@@ -29,7 +29,7 @@ import SocialButton from "@components/socialButton.astro";
       <DarkModeSwitch client:load />
     </div>
   </header>
-  <section class="flex flex-col mt-3 mb-3 md:flex-1 justify-center items-center gap-10">
+  <div class="flex flex-col mt-3 mb-3 md:flex-1 justify-center items-center gap-10">
     <div class="flex flex-col items-center gap-5">
       <div class="rounded-full relative w-48 h-48 overflow-hidden bg-bright-color/30 dark:bg-custom-gray/30">
         <div class="bg-color-profile dark:bg-black-white-profile bg-cover w-full h-full bg-top mt-6"></div>
@@ -37,9 +37,8 @@ import SocialButton from "@components/socialButton.astro";
       <p class="font-semibold text-zinc-600 dark:text-white bg-white dark:bg-dark rounded-md px-2">Hi , I'm Julian 👋</p>
     </div>
     <p class="text-3xl mx-2 md:max-w-xl lg:max-w-2xl md:text-4xl lg:text-6xl text-center font-montserrat lg:leading-snug bg-clip-text text-transparent bg-gradient-to-r from-purple-800 via-purple-700 to-blue-300/80 dark:from-white dark:via-white dark:to-[#242424]">Building and designing fullstack web applications.</p>
-  </section>
-  <!-- React Laravel Node Javascript Python Tailwind -->
-  <section class="flex-1 md:flex-auto mt-5">
-    <Slider items={logos} />
-  </section>
+  </div>
+  <div class="flex-1 h-full flex items-center md:items-start justify-center md:flex-auto ">
+      <Slider items={logos} />
+  </div>
 </section>
