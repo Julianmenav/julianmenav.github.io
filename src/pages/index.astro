@@ -1,19 +1,21 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Layout from "@layouts/Layout.astro";
 import Portfolio from "@sections/Portfolio.astro";
 import Home from "@sections/Home.astro";
 import ResumeBtn from "@components/ResumeBtn";
 import ArrowDown from "@components/ArrowDown";
 import AkwardPortfolio from "@sections/AkwardPortfolio.astro";
+import LenisScroll from "@components/LenisScroll";
 ---
 
 <Layout title="Julian | Software Developer">
-  <main id="main-scroll" class="snap-y snap-mandatory overflow-y-scroll h-screen">
+  <main id="main-scroll" class="overflow-y-scroll h-screen">
     <Home />
     <Portfolio />
-    <AkwardPortfolio />
+    <!-- <AkwardPortfolio /> -->
     <ResumeBtn client:load />
     <ArrowDown client:load />
+    <LenisScroll client:load />
   </main>
 </Layout>
 <style>
