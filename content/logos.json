@@ -10,19 +10,9 @@
     "url": "https://react.dev/"
   },
   {
-    "name": "Express",
-    "route": "/icons/Express.svg",
-    "url": "https://expressjs.com/"
-  },
-  {
     "name": "Php",
     "route": "/icons/Php.svg",
     "url": "https://www.php.net/"
-  },
-  {
-    "name": "Rust",
-    "route": "/icons/Ferris.svg",
-    "url": "https://www.rust-lang.org/"
   },
   {
     "name": "Laravel",
@@ -30,14 +20,9 @@
     "url": "https://laravel.com/"
   },
   {
-    "name": "Java",
-    "route": "/icons/Java.svg",
-    "url": "https://java.com/"
-  },
-  {
-    "name": "Spring",
-    "route": "/icons/Spring.svg",
-    "url": "https://spring.io/"
+    "name": "Rust",
+    "route": "/icons/Ferris.svg",
+    "url": "https://www.rust-lang.org/"
   },
   {
     "name": "Git",
@@ -50,19 +35,9 @@
     "url": "https://www.linux.org/"
   },
   {
-    "name": "AWS",
-    "route": "/icons/AWS.svg",
-    "url": "https://aws.amazon.com/"
-  },
-  {
     "name": "Tailwind",
     "route": "/icons/Tailwind.svg",
     "url": "https://tailwindcss.com/"
-  },
-  {
-    "name": "Bulma",
-    "route": "/icons/Bulma.svg",
-    "url": "https://bulma.io/"
   },
   {
     "name": "Astro",
@@ -78,5 +53,25 @@
     "name": "Flask",
     "route": "/icons/Flask.svg",
     "url": "https://flask.palletsprojects.com/"
+  },
+  {
+    "name": "AWS",
+    "route": "/icons/AWS.svg",
+    "url": "https://aws.amazon.com/"
+  },
+  {
+    "name": "Java",
+    "route": "/icons/Java.svg",
+    "url": "https://java.com/"
+  },
+  {
+    "name": "Spring",
+    "route": "/icons/Spring.svg",
+    "url": "https://spring.io/"
+  },
+  {
+    "name": "Bulma",
+    "route": "/icons/Bulma.svg",
+    "url": "https://bulma.io/"
   }
 ]
