@@ -59,16 +59,6 @@
     "technologies": ["React","Javascript","Tailwind"]
   },
   {
-    "picture": "/img/calculator.webp",
-    "name": "Scientific calculator",
-    "description": "One of the projects done during class.",
-    "links": [
-      "https://github.com/Julianmenav/Projects-DAW2/tree/production/calculadora",
-      "https://julianmenav.github.io/Projects-DAW2/calculadora/index.html"
-    ],
-    "technologies": ["HTML", "CSS", "Javascript"]
-  },
-  {
     "picture": "/img/pomodoro.webp",
     "name": "Pomodoro technique Timer",
     "description": "You can use this timer to study following the pomodoro technique setting the time in intervals of work and rest.",

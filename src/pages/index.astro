@@ -1,19 +1,21 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Portfolio from "../components/Portfolio.astro";
-import Home from "../components/Home.astro";
-import ResumeBtn from "../components/ResumeBtn";
-import ArrowDown from "../components/ArrowDown";
-import AkwardPortfolio from "../components/AkwardPortfolio.astro";
+import Layout from "@layouts/Layout.astro";
+import Portfolio from "@sections/Portfolio.astro";
+import Home from "@sections/Home.astro";
+import ResumeBtn from "@components/ResumeBtn";
+import ArrowDown from "@components/ArrowDown";
+import AkwardPortfolio from "@sections/AkwardPortfolio.astro";
+import LenisScroll from "@components/LenisScroll";
 ---
 
 <Layout title="Julian | Software Developer">
-  <main>
+  <main id="main-scroll" class="overflow-y-scroll h-screen">
     <Home />
     <Portfolio />
-    <AkwardPortfolio />
-    <ResumeBtn client:load />
+    <!-- <AkwardPortfolio /> -->
+    <!-- <ResumeBtn client:load /> -->
     <ArrowDown client:load />
+    <LenisScroll client:load />
   </main>
 </Layout>
 <style>

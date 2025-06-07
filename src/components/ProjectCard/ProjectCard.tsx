@@ -15,7 +15,7 @@ export default function ProjectCard({ name, picture, description, links, technol
       style={{
         backgroundImage: `url(${picture})`,
       }}
-      className={`text-white relative bg-cover bg-center w-[400px] shadow-xl overflow-hidden rounded-md hiddenCard ${hidden ? "" : "show"}`}
+      className={`text-white relative bg-cover bg-center w-[360px] shadow-xl overflow-hidden rounded-md hiddenCard ${hidden ? "" : "show"}`}
       onClick={()=>{}}
     >
       <div id="mask" className="bg-black"></div>
@@ -24,7 +24,7 @@ export default function ProjectCard({ name, picture, description, links, technol
           <p className="font-bold text-xl xs:text-2xl font-roboto">{name}</p>
           <div className="flex grow relative">
             <div className="w-[70%] pr-6 pt-3">
-              <p className="font-worksans text-xs 2xs:text-sm xs:text-base">
+              <p className="font-worksans text-xs 2xs:text-sm ">
                 {description}
               </p>
             </div>

@@ -1,0 +1,17 @@
+---
+import projectList from "@content/projectList.json";
+import ProjectCard from "@components/ProjectCard/ProjectCard";
+---
+
+<section id="portfolio" class="snap-start h-screen container px-6 py-8 max-w-[430px] sm:max-w-[560px] lg:max-w-[900px] xl:max-w-[1300px] m-auto">
+  <div class="bg-white dark:bg-transparent inline-block rounded-lg">
+    <p class="w-fit text-2xl font-roboto bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-orange-500 dark:from-purple-600 dark:to-purple-800 ">Playground</p>
+  </div>
+  <div id="project-list" class="flex flex-wrap gap-y-8 gap-x-6 mt-9 justify-center">
+    {
+      projectList.map((project, id) => {
+        return <ProjectCard client:visible picture={project.picture} name={project.name} description={project.description} links={project.links} technologies={project.technologies} />;
+      })
+    }
+  </div>
+</section>
