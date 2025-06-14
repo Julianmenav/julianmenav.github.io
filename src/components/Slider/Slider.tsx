@@ -1,27 +1,27 @@
 import { TechIcon } from '@content/tech-icons'
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 function Slider({ items }: { items: TechIcon[] }) {
 
   let [velocity, setVelocity] = useState<Number>(50);
   let [rangeValue, setRangeValue] = useState<string>("50");
 
-  useEffect(() => {
-    console.log("rangeValue", rangeValue);
+  const changeSliderVelocity = () => {
     let value = parseInt(rangeValue);
     if (isNaN(value) || value < 1 || value > 100) return;
 
     let newVelocity = 101 - value;
 
     setVelocity(newVelocity);
-
-    console.log(rangeValue, velocity);
-
-  }, [rangeValue])
+  }
 
   return (
     <div className="w-full">
-      <input type="range" min="1" max="100" value={rangeValue} onChange={(e) => {console.log("hola");setRangeValue(e.target.value)}} className="w-56 ml-12" />
+      <input type="range" min="1" max="100" className="w-56 ml-12" value={rangeValue}
+        onChange={(e) => { setRangeValue(e.target.value) }}
+        onMouseUp={changeSliderVelocity}
+        onTouchEnd={changeSliderVelocity}
+      />
       <div className="overflow-hidden flex items-center py-6 text-custom-gray bg-orange-200/20 dark:bg-purple-300/10">
         {
           [0, 1].map(() => (
