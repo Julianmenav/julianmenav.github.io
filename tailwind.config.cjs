@@ -62,7 +62,7 @@ module.exports = {
         },
       },
       animation: {
-        "infinite-slide": "slide 50s linear infinite",
+        "infinite-slide": "slide linear infinite",
       },
     },
   },
