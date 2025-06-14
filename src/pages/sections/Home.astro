@@ -38,6 +38,6 @@ import SocialButton from "@components/socialButton.astro";
     <p class="text-3xl mx-2 px-4 sm:px-12 md:px-0 sm:max-w-lg md:max-w-xl lg:max-w-2xl sm:text-4xl md:text-5xl lg:text-6xl text-center font-montserrat lg:leading-snug bg-clip-text text-transparent bg-gradient-to-r from-orange-200 via-orange-400 to-orange-500 dark:from-purple-200 dark:via-purple-700 dark:to-purple-900/40">Building and designing fullstack web applications.</p>
   </div>
   <div class="flex flex-1 items-center justify-center md:flex-auto pb-4 xl:pb-14">
-      <Slider items={techIcons} />
+      <Slider client:load items={techIcons} />
   </div>
 </section>
